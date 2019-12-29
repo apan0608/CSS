@@ -1,0 +1,43 @@
+body {
+    background-color: #1f1f1f;
+    height: 2000px;
+    color: #bfbfbf;
+}
+
+h1 {
+    font-weight: normal;
+}
+
+em {
+    color: #dd740b;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+}
+/* Z-index allows us to define the stacking order of the elements */
+.greenBox {
+    background: #5b8054;
+    position: relative;
+    top: -150px;
+    z-index: -1; /* Will come behind the blue box. */
+}
+
+/* Static is the default position. Top. bottom, left and right doesn't work in static. Basically no position applied  
+Sticky is not supported so don't use it. 
+Inherit will take positon property from its parents */
+.blueBox {
+    background:#627da0;
+    /* position: static; */
+    position: relative;
+    /* top: 100px; 
+    left: 20px; */
+}
+.container {
+    background: rgba(0,0,0,.4);
+    height: 200px;
+    width: 200px;
+    position: relative;
+}

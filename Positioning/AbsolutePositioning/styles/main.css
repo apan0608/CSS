@@ -1,0 +1,44 @@
+body {
+    background-color: #FFFFFF;
+    height: 2000px;
+    color: #bfbfbf;
+}
+
+h1 {
+    font-weight: normal;
+}
+
+em {
+    color: #dd740b;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+}
+/* Will move according to the window if the container is not absolute */
+.blueBox {
+    background:#627da0;
+     /* The green box disappeared other elements moved up, 
+     when we scroll the element will scroll with the screen */
+    position: absolute;
+    /* top: 0px; */
+    /* bottom: 50px; */
+    left: 15px;
+}
+
+.greenBox {
+    background: #5b8054;
+}
+
+.container {
+    background: rgba(0,0,0,.4);
+    height: 200px;
+    width: 200px;
+    /* The blue box moved with the containerif the bottom 50px is commented out 
+    but if the top is set to 0px for the blue box, then the bluebox won't move with it */
+    margin-top: 150px; 
+    top: 100px;
+    /* position: absolute; */
+}

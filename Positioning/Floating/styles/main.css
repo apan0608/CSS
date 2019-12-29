@@ -1,0 +1,38 @@
+body {
+    background-color: #1f1f1f;
+    height: 2000px;
+    color: #bfbfbf;
+}
+
+h1 {
+    font-weight: normal;
+}
+
+em {
+    color: #dd740b;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+/* Float default is none. 
+Text will floating around it, absolute will just overlap with the text 
+Float mean other elements will respect it's width and height */
+.blueBox {
+    background:#627da0;
+    float: left;
+}
+.greenBox {
+    background:#5b8854;
+    float: right;
+}
+
+h1 {
+    clear: left; /*  Will ignore the floats.
+    CLear the element on the direction it defined The element will start on a new line */
+}
